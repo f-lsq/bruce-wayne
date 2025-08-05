@@ -29,7 +29,7 @@ class UserManager():
     def addNewUser(self):
         newUserID = input('Enter new user ID: ')
         newUsername = input('Enter new user name: ')
-        newDiskSpace = int(input('Enter disk space used by the user (in MB): ')) # <- converts user input into int
+        newDiskSpace = int(input('Enter disk space used by the user (in MB): ')) # <- converts user input into int (user input is always string so need convert to int)
 
         newUser = User(newUserID, newUsername, newDiskSpace) # <- create a new User object
         self.userList[newUserID] = newUser # <- add the new User to dictionary

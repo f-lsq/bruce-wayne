@@ -32,11 +32,10 @@ class User:
 
     # This is a method of the User class
     def showInfo(self):
-        msg = '''
-        User ID: {0}
-        User Full Name: {1}
-        Disk Space Used: {2} MB
-        '''.format(self.userID, self.username, self.diskspace)
+        msg = '''User ID: {0}
+User Full Name: {1}
+Disk Space Used: {2} MB
+'''.format(self.userID, self.username, self.diskspace)
         print(msg)
 
 # Side note: Indentation is v important in Python!!!
